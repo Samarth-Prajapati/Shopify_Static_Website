@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container-fluid sticky-top bg-dark">
+        <!-- navigation panel -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <a class="navbar-brand text-white" href="index.html"><img src="images/logo.png" class="logo"
+                        alt="" /><strong>SHOPIFY</strong></a>
+                <!-- hamburger button -->
+                <button class="navbar-toggler ms-auto justify-content-end bg-white" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav nav-pills w-100 justify-content-end" id="pills-tab navigation-pills" role="tablist">
+                        <li class="nav-item px-1" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">
+                                Home
+                            </button>
+                        </li>
+                        <li class="nav-item px-1" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">
+                                FAQ
+                            </button>
+                        </li>
+                        <li class="nav-item px-1" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">
+                                About
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- home tab -->
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <!-- carousel -->
+                <section>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/4.jpg" class="d-block w-100" alt="..." />
+                                <div class="carousel-caption d-none d-md-block bg-light rounded-5 opacity-50 text-dark">
+                                    <h5>Shopify Collection</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/3.jpg" class="d-block w-100" alt="..." />
+                                <div class="carousel-caption d-none d-md-block bg-light rounded-5 opacity-50 text-dark">
+                                    <h5>Kid's Wear</h5>
+                                    <p>Shop for your kids with our latest collection</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/2.jpg" class="d-block w-100" alt="..." />
+                                <div class="carousel-caption d-none d-md-block bg-light rounded-5 opacity-50 text-dark">
+                                    <h5>Men's Wear</h5>
+                                    <p>Shop for your men with our latest collection</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/1.jpg" class="d-block w-100" alt="..." />
+                                <div class="carousel-caption d-none d-md-block bg-light rounded-5 opacity-50 text-dark">
+                                    <h5>Women's Wear</h5>
+                                    <p>Shop for your women with our latest collection</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
+                <!-- collections -->
+                <section class="collections">
+                    <div class="container">
+                        <br />
+                        <h2 class="text-center text-light fw-bold">Discover Clothing</h2>
+                        <br />
+                        <!-- tab -->
+                        <ul class="nav nav-tabs w-100 justify-content-center" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">
+                                    All
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">
+                                    Men
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">
+                                    Women
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#kids-tab-pane" type="button" role="tab"
+                                    aria-controls="kids-tab-pane" aria-selected="false">
+                                    Kids
+                                </button>
+                            </li>
+                        </ul>
+                        <br />
+                        <div class="tab-content" id="myTabContent">
+                            <!-- all -->
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <div class="row justify-content-center">
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 18rem">
+                                            <img src="images/men-tshirt.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Men</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 18rem">
+                                            <img src="images/girls.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Women</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 18rem">
+                                            <img src="images/kids.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Kids</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- men -->
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">
+                                <div class="row justify-content-center">
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/men-tshirt.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Men</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/men-tshirt.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Men</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/men-tshirt.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Men</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/men-tshirt.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Men</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/men-tshirt.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Men</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- women -->
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                aria-labelledby="contact-tab" tabindex="0">
+                                <div class="row justify-content-center">
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/girls.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Women</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/girls.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Women</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/girls.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Women</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/girls.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Women</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/girls.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Women</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- kid -->
+                            <div class="tab-pane fade" id="kids-tab-pane" role="tabpanel" aria-labelledby="kids-tab"
+                                tabindex="0">
+                                <div class="row justify-content-center">
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/kids.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Kids</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/kids.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Kids</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/kids.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Kids</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/kids.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Kids</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <div class="card" style="width: 12rem">
+                                            <img src="images/kids.jpg" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <p class="card-text text-center">Kids</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- row cols use -->
+                <section>
+                    <div class="container my-5">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="images/x.jpg"
+                                    class="img-fluid w-100 border border-5 border-secondary rounded-5" alt="" />
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-4">
+                                    <h2>Start Shopping Now</h2>
+                                    <p>
+                                        Elevate your style with our latest collection and trendy
+                                        clothes for men, women and kids. Lorem ipsum dolor sit
+                                        amet, consectetur adipisicing elit. Unde qui optio
+                                        eligendi hic numquam, exercitationem eveniet, sed
+                                        veritatis cum perspiciatis quaerat voluptatibus? Rerum,
+                                        consequuntur officiis velit explicabo quidem alias
+                                        perferendis aperiam quasi ad quae qui. Laudantium optio
+                                        illum rem unde?
+                                    </p>
+                                    <a href="" class="btn btn-primary">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- faq tab - accrodian -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+                <section>
+                    <br />
+                    <br />
+                    <div class="container">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        What is your return and exchange policy?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        We accept returns and exchanges within 7–14 days of
+                                        delivery, provided the item is unworn, unwashed, and with
+                                        original tags. To initiate a return, contact support.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        How long does shipping take?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Orders are typically processed within 1–2 business days.
+                                        Delivery usually takes 3–7 business days depending on your
+                                        location. Express shipping options are available at
+                                        checkout.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        How do I choose the right size?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Please refer to our [Size Guide] available on each product
+                                        page. If you're between sizes or need assistance, feel
+                                        free to contact our support team.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        What payment methods do you accept?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        We accept all major credit/debit cards, UPI, Net Banking,
+                                        PayPal, and other secure payment methods available at
+                                        checkout.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                        aria-controls="flush-collapseFive">
+                                        Can I track my order?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Yes, once your order is shipped, you will receive an email
+                                        and/or SMS with the tracking number and link to monitor
+                                        your delivery in real time.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br />
+            </div>
+            <!-- about tab -->
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                tabindex="0">
+                <section>
+                    <br /><br />
+                    <div class="container">
+                        <h2>About Us</h2>
+                        <br />
+                        <p>
+                            Welcome to Shopify, your go-to destination for trendy,
+                            comfortable, and affordable fashion. We believe clothing is more
+                            than just fabric — it's a reflection of who you are. Whether
+                            you're dressing up for a special occasion or keeping it casual,
+                            we’ve got styles that suit every mood and moment. Our
+                            collections are carefully curated to bring you the latest
+                            trends, timeless classics, and high-quality essentials — all at
+                            your fingertips. With a focus on quality, fit, and customer
+                            satisfaction, we’re here to help you look good and feel
+                            confident, every day.
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+                            obcaecati corporis dignissimos esse beatae maiores illo
+                            quibusdam. Ut quos dicta nesciunt, ratione iste quod tempora
+                            dolorem vitae nisi ad? Facilis iusto perspiciatis nihil
+                            provident voluptatum! Autem illum, quos alias nemo hic
+                            consequatur quae odit aut optio harum voluptates nobis quis iste
+                            accusantium amet ipsa unde aliquam modi, magni vitae? Rerum
+                            maiores assumenda, sint, provident impedit eligendi obcaecati
+                            magni non pariatur consectetur in modi alias nam nisi. Autem
+                            necessitatibus officia itaque, veritatis soluta debitis
+                            consequuntur! Dolor, iste, libero esse, soluta aut architecto
+                            nihil labore ratione assumenda velit delectus nulla? Provident,
+                            ducimus.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <a class="navbar-brand text-white" href="index.html"><img src="images/logo.png" class="logo"
+                            alt="" /><strong>SHOPIFY</strong></a>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="" class="text-decoration-none text-white">Home</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-decoration-none text-white">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-decoration-none text-white">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Policies</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="" class="text-decoration-none text-white">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-decoration-none text-white">Terms of Services</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-decoration-none text-white">Return Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Subscribe to Our Newsletter</h5>
+                    <p>Stay updated with the latest trends and offers!</p>
+                    <form class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email"
+                            aria-label="Email for newsletter" />
+                        <button class="btn btn-warning" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+
+</html>
